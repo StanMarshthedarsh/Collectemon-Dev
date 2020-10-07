@@ -1,0 +1,373 @@
+Collectemon
+A Pokémon inspired game
+
+HELP BOOKLET
+
+TABLE OF CONTENTS
+
+I. INTRODUCTION
+
+II. USER INTERFACE
+
+III. ACCOUNT CREATION AND LOGIN
+
+IV. CURRENCY, LEVELING, AND RARITY
+
+V. CATCHING POKEMON
+
+VI. POKESHOP
+
+VII. STATS PAGE
+
+VIII. BANK
+
+IX. POKEMON MANAGER
+
+X. TRADING
+
+XI. LEADERBOARDS
+
+XII. ACCOUNT DELETION
+
+XIII. FAQ (Frequently Asked Questions)
+
+XIV. LIMITATIONS
+
+XV. CREDITS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I. INTRODUCTION
+
+    i. About Collectemon
+       Welcome to Collectemon. Collectemon is a fan-based game inspired by Pokemon. It was made as a command-line game using Python and SQL.
+
+    ii. Rationale
+        Collectemon was made as a submission to Harvard CS50's final project, and also to entertain gamers of all ages.
+
+    iii. Features
+        Some of the game's features are a retro style black and white look, sound effects, user-friendly instructions, currencies like coins and gems, a leveling and points system,
+        a security system to stop hackers, an ability to trade pokemon, and of course, over 1800 Pokemon to collect (~900 Pokemon and their Shiny counterparts, Gen 1 - 8)
+
+    iv. Goal
+        The goal of the game is to collect as many unique Pokemon as you can. Who will be the first player to collect all 1808 Pokemon?
+
+
+
+
+
+II. USER INTERFACE
+
+    i. On-screen instructions
+       Collectemon's on screen instructions guide you throughout the game, helping you to access specific features. Here are some sample in game instructions:
+
+    1.  Press:
+        0 to catch Pokemon
+        1 to go to the Pokeshop
+        2 to view your stats
+        3 to go to the bank
+        4 to access your Pokemon Manager
+        5 to trade with another player
+        6 to access the Collectemon Leaderboards
+        7 to view the Collectemon help booklet
+        8 to quit
+
+    2.  Wanna catch another pokemon? Input y for yes and n for no:
+
+    3.  Type in the name of the Pokemon you want to release, or n to cancel:
+
+    4.  Press enter to continue:
+
+        To respond to instructions like 1, 2, and 3, simply type in the appropriate number / letter / name then hit enter
+        To respond to instructions that say "Press enter", simply press enter ONCE. Pressing enter more than once may trigger bugs in the game.
+
+
+
+
+
+III. ACCOUNT CREATION AND LOGIN
+
+    i. Creating a new account
+       Creating a new Collectemon account is simple. Simply type in a username (Only letters and numbers allowed), and a password (A combination of letters
+       and numbers will do) and you're good to go! The system will alert you if the username you picked is already taken or invalid. Once your account is created,
+       you'll receive a welcome gift of 1000 coins and 10 gems and can now play the game! IMPORTANT: Your username and password can't be changed, so choose wisely!
+
+    ii. Logging in
+        To login, simply type the username and password you used to create your account. For added security, your password won't be shown as you type it onscreen.
+
+
+
+
+
+IV. CURRENCY, LEVELING, AND RARITY
+
+    i. Currency
+       Collectemon has 2 currencies: Coins and Gems. Coins are common and easy to get, while Gems are rare and therefore much more valuable.
+
+       You can get coins by:
+       1. Catching Pokemon or
+       2. Exchanging gems for coins in the Bank
+
+       You can get gems by:
+       1. Catching Shiny Pokemon or
+       2. Levelling up
+
+       You can spend coins through buying Pokemon in the shop.
+
+       You can spend gems through:
+       1. Getting a Master Ball to guarantee a catch on a Pokemon which broke free
+       2. Getting Legendary Pokemon in the shop or
+       3. Exchanging them for coins in the Bank
+
+    ii. Exp and Level
+       Collectemon has an exp or experience system which allows you to level up once you hit a certain amount of exp.
+
+       You can gain exp through:
+       1. Catching Pokemon or
+       2. Buying Pokemon in the shop
+
+       Once you level up, you'll be rewarded with a certain amount of coins and gems depending on your level.
+
+    iii. Rarities
+       Collectemon features a rarity system which determines how rare a Pokemon is. It is on a scale of 1 - 10, 1 being most common and 10 being legendary.
+       In addition, shiny Pokemon are much rarer than their Normal counterparts, so a Shiny Legendary is the hardest Pokemon to get.
+
+
+
+
+
+V. CATCHING POKEMON
+
+    i. Getting Pokeballs
+       To get your Pokeballs, simply hit enter and the game will randomly give you 1 or 3 Pokeballs, Great Balls, or Ultra Balls. In addition, there's a slight
+       chance to get a Master Ball, which guarantees a catch.
+
+       Types of Pokeballs include:
+       1. Pokeball: The most common ball, with the lowest catch chance in the game
+       2. Great Ball: Uncommon, has an additional 15% catch chance compared to a Pokeball
+       3. Ultra Ball: Rare, has an additional 15% catch chance compared to a Great Ball
+       4. Master Ball: Super rare, guarantees a catch
+
+    ii. Catching the Pokemon
+       The Pokemon will appear through a text displayed onscreen in the format "A wild xxx appeared", where xxx is the Pokemon that's randomly selected.
+       Catch chance will vary depending on the Pokeball used and the rarity of the Pokemon. To catch, simply hit enter and check if caught or if it broke free.
+       You will have either 1 or 3 attempts to catch it, depending on how many balls you got.
+
+    iii. Catch Outcomes
+       1. If the Pokemon is caught, you will be asked if you want to keep it. If kept, you will receive coins, exp, and gems (if shiny) depending on its rarity.
+       2. If it breaks free and you are out of balls, you will have the option to pay a certain amount of gems (depending on rarity) to get a Master Ball and guarantee a catch
+
+
+
+
+
+VI. POKESHOP
+    i. Features
+
+       1. Collectemon's Pokeshop is the place to get the Pokemon you don't have yet without needing to catch them in the wild.
+       2. 4 Pokemon will be chosen randomly, with an additional Legendary Pokemon as the special Legendary Offer.
+       3. For convenience, an asterisk will be placed beside the Pokemon's name if you do not have it yet.
+       4. Prices depend on the rarity of the Pokemon. To buy a Pokemon, simply follow the onscreen instructions.
+       5. The game will also alert you if you do not have enough money to buy your desired Pokemon.
+       6. You will see new Pokemon every time you visit the shop.
+
+
+
+
+
+VII. STATS PAGE
+
+    i. Stats Displayed
+      The stats page displays the following:
+
+      1. Total Pokemon caught - The total # of Pokemon you caught in-game
+      2. Unique pokemon caught (Normal) - The total number of unique Normal Pokemon caught (No duplicates included)
+      3. Unique pokemon caught (Shiny) - The total number of unique Shiny Pokemon caught (No duplicates included)
+      4. Coins - Your current Coins
+      5. Gems - Your current Gems
+      6. Total Exp - Your cumulative exp
+      7. Current Level - Your current level
+      8. Exp needed to level up - How much exp left before you level up
+
+
+
+
+
+VIII. BANK
+
+    i. Function
+       The bank serves as a place to exchange your gems to coins
+
+    ii. Exchange Rates
+        Exchange Rates vary from 100 - 250 coins per gem. They refresh every time you enter the Bank.
+
+
+
+
+
+IX. POKEMON MANAGER
+
+    i. Function
+       The Pokemon Manager serves as a place to view, manage, or release your Pokemon, as well as check out other players' Pokemon. 
+       Don't worry, in-game instructions will guide you in using it.
+
+
+
+
+
+X. TRADING
+
+    i. Function
+       This is where you can trade with other players. To trade, simply provide the Pokemon you want to give and get, as well as the other player's username.
+       You can only trade with one user at a time, and one Pokemon at a time. This means you can only give and receive one Pokemon to and from the other player.
+       In addition, the other player needs to enter his/her password to confirm the trade.
+
+
+
+
+
+XI. LEADERBOARDS
+
+    i. Point system
+       Collectemon's official leaderboard is based on total points. Points are based on how many unique Pokemon you have as well as your total exp. To check your points,
+       update them first. You may do this under the Leaderboards section. IMPORTANT: To ensure that your points are accurate, be sure to update them first before checking
+       the Official Collectemon Leaderboard.
+
+    ii. Other Leaderboards
+       Collectemon's other leaderboards include:
+
+      1. Top 10 users with the most legends
+      2. Top 10 users with the most total exp
+      3. Top 10 users with the most Shiny Pokemon and
+      4. Top 10 users with the most Pokemon
+
+      Do take note that, in case there are less than 10 players registered in game, the leaderboards will only display a limited amount of info Ex. Top 8 / Top 4 only etc.
+
+    iii. Official Collectemon Leaderboard
+       This is Collectemon's official leaderboard, where you can view the best players in the game.
+       Your ranking is based on how much points you currently have after updating them.
+
+
+
+
+
+XII. ACCOUNT DELETION
+
+    i. Deleting your account
+       IMPORTANT: YOUR ACCOUNT, ONCE DELETED, CANNOT BE RECOVERED!
+       If you are 100% sure that you want to delete your account, follow these steps carefully. Nothing will seem to happen at first, and that's fine.
+       Make sure you are in the Main Menu. If there, follow these instructions:
+
+       1. Type 68 then press enter
+       2. Type 69 then press enter
+       3. Type 76 then press enter
+       4. Type 69 then press enter
+       5. Type 84 then press enter
+       6. Type 69 then press enter
+
+       You will then have one last chance to decide before permanently deleting your account.
+       IMPORTANT: If you make a mistake/typo, you must quit the game, login again, and start from step 1 before you can delete your account.
+
+
+
+
+
+XIII. FAQ
+
+    1. Why is the title of the game Collectemon?
+
+      - It's a combination of the words Collect and Pokemon, as the goal of the game is to collect as much unique Pokemon as you can.
+
+    2. What's with the steps for account deletion? Did you just make up those numbers?
+
+      - Fun fact, those numbers are actually the ASCII codes which spell out the word "DELETE"
+
+    3. How can I trade if the person who I want to trade with is not around?
+
+      - Due to the limitations of this game, the person who you want to trade with must be around so he/she can enter his/her password.
+        (Unless he/she tells you the password lol)
+
+    4. Is there a penalty for duplicate Pokemon?
+
+      - Well, no. Although you'd rather have 10 unique Pokemon than 10 of the same thing, right?
+
+    5. I got 3 Ultra Balls yet failed to catch a Pokemon of rarity 1. Is the game rigged?
+
+      - Short answer, no. Long answer: Even if Ultra Balls are the second best ball in the game, they don't guarantee a catch.
+        There's still that small chance that the Pokemon will break free. Just keep catching Pokemon and I assure you that you'll get a lot eventually.
+
+    6. I want a Legendary Pokemon. How can I get one easily?
+
+      - My best advice is for you to keep catching Pokemon to level up and earn gems. That way, you can buy the Pokeshop's Legendary Offer and get a guaranteed Legend
+        without having to catch it.
+        Or, you can trade other Pokemon for a Legendary if your trade partner accepts that.
+
+    7. How long did it take you to make this game, and how hard was it to make?
+
+      - Around 2 weeks. Most of the code wasn't really that hard to make, except for maybe the Python dictionaries I had to use for the leaderboards,
+       and keeping track of the sheer amount of while loops and break statements in my source code.
+       Deciding the rarities of each Pokemon was a tedious process that involved quite a lot of research.
+       The biggest challenge for me was implementing the formulas behind the game, such as
+
+       i. Catch chances, or the probabilities of Pokemon of a specific rarity getting caught
+       ii. Coins and exp gained depending on the Pokemon's rarity and if it's Normal / Shiny
+       iii. Exp needed to level up and
+       iv. Costs of buying Normal and Shiny Pokemon of a specific rarity in the shop.
+
+    8. Why did you choose to make this specific game?
+
+       - I'm a fan of Pokemon and I used to play it in my childhood. Now, I want to give back and give people a chance to enjoy a Pokemon-like game if they don't
+         have access or can't afford to buy the official ones. Aside from this, I feel like it's a stepping stone before I venture into Game Development from CS50.
+
+    9. What about Copyright issues?
+
+       - This is merely a fan based game. It is NOT an official Pokemon game. All rights still go to Nintendo and Game Freak. No copyright infringement intended.
+
+
+
+
+
+XIV. LIMITATIONS
+
+    i. Graphics 
+       As you have noticed, this game doesn't have graphics. I'm not experienced with game design and development yet, and Python and SQL also
+       aren't typically languages used to develop games with graphics. On the upside, it does have that old retro look that takes you back to the beginnings
+       of video games.
+
+    ii. Singleplayer only
+       Only one person at a time can play this game, due to SQL's limitations (Race Conditions)
+
+    iii. Sensitive user input
+       User input is extremely sensitive, so if let's say you press enter more than once, unintended bugs/glitches might occur in-game.
+
+
+
+
+
+XV. CREDITS
+
+Special thanks to:
+
+My parents, who constantly supported be throughout this endeavor
+and
+CS50's staff
+who guided me through learning about Computer Science
+
+I couldn't have done this without them :)
+
